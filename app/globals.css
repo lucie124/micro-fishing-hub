@@ -21,23 +21,7 @@
     @apply border-gray-200;
   }
 
-  /* 跳过导航链接样式 */
-  .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 6px;
-    background: #2563EB;
-    color: white;
-    padding: 8px;
-    text-decoration: none;
-    border-radius: 4px;
-    z-index: 1000;
-    font-weight: 600;
-  }
 
-  .skip-link:focus {
-    top: 6px;
-  }
 
   /* 焦点样式 - 确保键盘导航可见 */
   *:focus {

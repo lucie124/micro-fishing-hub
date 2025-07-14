@@ -32,11 +32,6 @@ export default function RootLayout({
     <html lang="zh-CN">
       <body className="min-h-screen bg-primary-white">
         <AccessibilityProvider>
-          {/* 跳过导航链接 - 为键盘用户提供快速导航 */}
-          <a href="#main-content" className="skip-link">
-            跳到主要内容
-          </a>
-          
           <Navigation />
           
           <main id="main-content" className="pt-16" role="main" tabIndex={-1}>

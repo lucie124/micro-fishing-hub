@@ -1,121 +1,20 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/app/_not-found/page-3f48f134626aabc0.js"
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/css/1344f39228b9e814.css",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/77-ef8e31136d34b783.js",
-      "static/chunks/app/layout-052beca78254482a.js"
-    ],
-    "/community/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/app/community/page-12271b6653307523.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/beginners/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/77-ef8e31136d34b783.js",
-      "static/chunks/app/beginners/page-9125120ab9b8f2a3.js"
-    ],
-    "/fish-guide/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/77-ef8e31136d34b783.js",
-      "static/chunks/app/fish-guide/page-47f4fa1352d2a1d5.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/77-ef8e31136d34b783.js",
-      "static/chunks/app/page-bf5ad2672f62ac80.js"
-    ],
-    "/equipment/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/77-ef8e31136d34b783.js",
-      "static/chunks/app/equipment/page-e7cd0ad00ba8bf90.js"
-    ],
-    "/techniques/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/77-ef8e31136d34b783.js",
-      "static/chunks/app/techniques/page-bf0e203e11955e1a.js"
-    ],
-    "/fish-guide/paradise-fish/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/app/fish-guide/paradise-fish/page-da41b43f6ae86e64.js"
-    ],
-    "/fish-guide/predatory-chub/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/app/fish-guide/predatory-chub/page-e26e48b05d866339.js"
-    ],
-    "/fish-guide/white-stripe-carp/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/app/fish-guide/white-stripe-carp/page-b78604e42061513b.js"
-    ],
-    "/fish-guide/topmouth-gudgeon/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/app/fish-guide/topmouth-gudgeon/page-8191074c9551f00c.js"
-    ],
-    "/fish-guide/chinese-bitterling/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/app/fish-guide/chinese-bitterling/page-5fc1a304493536eb.js"
-    ],
-    "/fish-guide/rhinogobius-giurinus/page": [
-      "static/chunks/webpack-c81f7fd28659d64f.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-149e80616803dd43.js",
-      "static/chunks/main-app-7a0250e8aa4ad0a6.js",
-      "static/chunks/972-d4c55e1612518327.js",
-      "static/chunks/app/fish-guide/rhinogobius-giurinus/page-28d282ddcd9b91c5.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/beginners/page.js"
     ]
   }
 }
