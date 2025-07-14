@@ -34,7 +34,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-lg md:text-xl text-white font-medium drop-shadow-lg"
+            className="text-lg md:text-xl text-white font-semibold drop-shadow-text-dark"
           >
             发现微小世界的美好
           </motion.p>
@@ -44,7 +44,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-text-darker"
           >
             小物之美
           </motion.h1>
@@ -54,7 +54,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed drop-shadow-lg"
+            className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed drop-shadow-text-dark font-medium"
           >
             专为小物钓新手打造的，集美学、教学与社区于一体的线上指南。
             在这里，每一次垂钓都是与自然的对话。
@@ -71,19 +71,19 @@ const HeroSection = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-fish-gem-blue px-6 py-3 rounded-lg font-semibold flex items-center space-x-2 hover:bg-gray-100 transition-all duration-300 drop-shadow-lg"
+                className="bg-white text-fish-gem-blue px-8 py-4 rounded-lg font-bold text-lg flex items-center space-x-3 hover:bg-gray-100 transition-all duration-300 shadow-button"
               >
                 <span>开启我的小物钓之旅</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-6 h-6" />
               </motion.button>
             </Link>
             
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center space-x-2 px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-fish-gem-blue transition-all duration-300 drop-shadow-lg"
+              className="flex items-center space-x-3 px-8 py-4 border-2 border-white text-white rounded-lg font-bold text-lg hover:bg-white hover:text-fish-gem-blue transition-all duration-300 shadow-button"
             >
-              <Play className="w-5 h-5" />
+              <Play className="w-6 h-6" />
               <span>观看介绍视频</span>
             </motion.button>
           </motion.div>
@@ -100,7 +100,7 @@ const HeroSection = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-white rounded-full flex justify-center drop-shadow-lg"
+          className="w-6 h-10 border-2 border-white rounded-full flex justify-center drop-shadow-text-dark"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}

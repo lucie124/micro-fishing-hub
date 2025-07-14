@@ -96,6 +96,12 @@ module.exports = {
         'focus': '2px solid #2563EB',
         'focus-offset': '2px',
       },
+      // 添加自定义阴影配置
+      boxShadow: {
+        'text-dark': '0 2px 4px rgba(0,0,0,0.8)',
+        'text-darker': '0 4px 8px rgba(0,0,0,0.9)',
+        'button': '0 4px 12px rgba(0,0,0,0.3)',
+      },
     },
   },
   plugins: [
