@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Source+Han+Serif+SC:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Nunito:wght@300;400;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* 确保基础字体大小可访问 */
+    font-size: 16px;
+  }
+  
+  body {
+    @apply bg-primary-white text-primary-text font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    /* 提升行高以提高可读性 */
+    line-height: 1.6;
+  }
+  
+  * {
+    @apply border-gray-200;
+  }
+
+  /* 跳过导航链接样式 */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #2563EB;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    font-weight: 600;
+  }
+
+  .skip-link:focus {
+    top: 6px;
+  }
+
+  /* 焦点样式 - 确保键盘导航可见 */
+  *:focus {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
+  }
+
+  /* 移除默认焦点样式，使用自定义样式 */
+  *:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* 确保焦点样式在键盘导航时可见 */
+  *:focus-visible {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
+  }
+
+  /* 提升链接的可访问性 */
+  a {
+    @apply text-fish-gem-blue;
+    text-decoration: none;
+    text-underline-offset: 2px;
+  }
+
+  a:hover {
+    @apply text-fish-vibrant-orange;
+  }
+
+  /* 确保按钮有足够的对比度 */
+  button {
+    @apply font-medium;
+    min-height: 44px; /* 确保触摸目标足够大 */
+    min-width: 44px;
+  }
+
+  /* 提升表单元素的可访问性 */
+  input, textarea, select {
+    @apply border-2 border-gray-300 rounded-lg px-4 py-2;
+    min-height: 44px;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    @apply border-fish-gem-blue outline-none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+  }
+
+  /* 确保图片有alt文本 */
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  /* 提升文本对比度 */
+  .text-gray-600 {
+    color: #4B5563; /* 更深的灰色，提升对比度 */
+  }
+
+  .text-gray-500 {
+    color: #6B7280; /* 更深的灰色，提升对比度 */
+  }
+
+  /* 确保小文本有足够的对比度 */
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .text-xs {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-fish-gem-blue text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-fish-gem-blue/90 hover:scale-105 active:scale-95;
+    min-height: 44px;
+    min-width: 44px;
+    /* 确保按钮文本有足够对比度 */
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  
+  .btn-secondary {
+    @apply bg-natural-mint text-primary-text px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-natural-mint/90 hover:scale-105 active:scale-95;
+    min-height: 44px;
+    min-width: 44px;
+    /* 确保按钮文本有足够对比度 */
+    color: #1F2937;
+    font-weight: 600;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6 transition-all duration-300 hover:shadow-md hover:scale-[1.02];
+    /* 确保卡片有足够的对比度 */
+    background-color: #FFFFFF;
+    border-color: #E5E7EB;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-natural-mint to-stream-blue bg-clip-text text-transparent;
+    /* 为不支持背景裁剪的浏览器提供后备颜色 */
+    color: #4A90E2;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/80 border border-white/20;
+    /* 确保玻璃效果有足够的对比度 */
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* 提升可访问性的工具类 */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* 确保高对比度文本 */
+  .text-high-contrast {
+    color: #1F2937;
+  }
+
+  .text-medium-contrast {
+    color: #374151;
+  }
+
+  /* 提升按钮的可访问性 */
+  .btn-accessible {
+    @apply relative inline-flex items-center justify-center;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+
+  .btn-accessible:focus {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
+  }
+
+  /* 提升链接的可访问性 */
+  .link-accessible {
+    @apply text-fish-gem-blue underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
+
+  .link-accessible:hover {
+    @apply text-fish-vibrant-orange;
+  }
+
+  .link-accessible:focus {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* 提升可访问性的工具类 */
+  .focus-visible {
+    outline: 2px solid #4A90E2;
+    outline-offset: 2px;
+  }
+
+  /* 确保足够的触摸目标大小 */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* 提升文本对比度 */
+  .contrast-high {
+    color: #1F2937;
+  }
+
+  .contrast-medium {
+    color: #374151;
+  }
+
+  .contrast-low {
+    color: #6B7280;
+  }
+
+  /* 确保背景色有足够对比度 */
+  .bg-accessible {
+    background-color: #FFFFFF;
+  }
+
+  .bg-accessible-secondary {
+    background-color: #F9FAFB;
+  }
+} 
