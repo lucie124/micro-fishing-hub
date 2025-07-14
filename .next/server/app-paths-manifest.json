@@ -1,4 +1,15 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/community/page": "app/community/page.js",
+  "/beginners/page": "app/beginners/page.js",
+  "/fish-guide/page": "app/fish-guide/page.js",
   "/page": "app/page.js",
-  "/beginners/page": "app/beginners/page.js"
+  "/equipment/page": "app/equipment/page.js",
+  "/techniques/page": "app/techniques/page.js",
+  "/fish-guide/paradise-fish/page": "app/fish-guide/paradise-fish/page.js",
+  "/fish-guide/predatory-chub/page": "app/fish-guide/predatory-chub/page.js",
+  "/fish-guide/white-stripe-carp/page": "app/fish-guide/white-stripe-carp/page.js",
+  "/fish-guide/topmouth-gudgeon/page": "app/fish-guide/topmouth-gudgeon/page.js",
+  "/fish-guide/chinese-bitterling/page": "app/fish-guide/chinese-bitterling/page.js",
+  "/fish-guide/rhinogobius-giurinus/page": "app/fish-guide/rhinogobius-giurinus/page.js"
 }
